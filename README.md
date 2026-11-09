@@ -56,7 +56,7 @@ Mi portfolio no es una página con secciones: es un puesto de perros en una call
 ## Estructura
 
 ```
-perros-carlos-vispo/
+portfolio-carlosvispo/
 ├── index.html                 Página y pantalla de carga
 ├── css/
 │   └── estilos.css            Estilos de la interfaz
