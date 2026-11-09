@@ -28,4 +28,17 @@ export const PROYECTOS = [
     imagen: 'assets/img/hotel-o-castro.jpg',
     ilustracion: 'hotel',
   },
+  {
+    nombre: 'Vispo & Co.',
+    tipo: 'Web',
+    estado: 'Servido',
+    descripcion:
+      'Web de mi marca con calculadora de presupuesto, envío por Netlify Forms y reservas con la API de Cal.com. ' +
+      'Hero 3D con Three.js y un build propio en Node que une el código en un HTML autocontenido, con tests E2E en Playwright.',
+    skills: 'JavaScript · Three.js · Node.js · Netlify Forms · Cal.com API · Playwright',
+    boton: 'VER WEB',
+    href: 'https://vispoandco.netlify.app',
+    imagen: 'assets/img/vispo-and-co.jpg',
+    ilustracion: 'vispo',
+  },
 ];

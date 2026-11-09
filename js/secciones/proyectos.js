@@ -48,6 +48,14 @@ const ILUSTRACIONES = {
     g.font = `800 ${Math.round(hh * 0.13)}px "Bricolage Grotesque"`;
     g.fillText('HOTEL', x + w * 0.06, hy + hh * 0.28); g.fillText('O CASTRO', x + w * 0.06, hy + hh * 0.42);
   },
+  vispo(g, x, y, w, h) {
+    g.fillStyle = '#0b0b0d'; g.fillRect(x, y, w, h);
+    const s = h * 0.5, cx = x + w * 0.42, cy = y + h / 2;
+    g.fillStyle = '#e9e5dd'; g.beginPath();
+    g.moveTo(cx - s * 0.45, cy - s / 2); g.lineTo(cx - s * 0.1, cy - s / 2); g.lineTo(cx + s * 0.35, cy);
+    g.lineTo(cx - s * 0.1, cy + s / 2); g.lineTo(cx - s * 0.45, cy + s / 2); g.lineTo(cx, cy); g.closePath(); g.fill();
+    g.fillStyle = '#e8336f'; g.fillRect(cx + s * 0.4, cy + s * 0.28, s * 0.25, s * 0.22);
+  },
 };
 
 /* ---------- capturas ---------- */
