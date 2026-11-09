@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- © 2026 Carlos Adolfo Vispo González. Todos los derechos reservados. Ver LICENSE. -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Portfolio 3D de Carlos Vispo, desarrollador FullStack: un carrito de perros calientes venezolano de noche.">
+  <meta name="theme-color" content="#07050f">
+  <title>Perros Carlos Vispo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <canvas id="c" tabindex="-1" aria-label="Puesto de perros calientes en 3D"></canvas>
+
+  <header class="bar">
+    <button class="logo" id="home" type="button">CARLOS VISPO</button>
+    <div class="right">
+      <nav class="nav" aria-label="Secciones">
+        <button type="button" data-go="proyectos" style="--c:#ff2f7a">Proyectos</button>
+        <button type="button" data-go="servicios" style="--c:#ffd23f">Habilidades</button>
+        <button type="button" data-go="sobre" style="--c:#4d86ff">Sobre mí</button>
+        <button type="button" data-go="contacto" style="--c:#ff3b4e">Contacto</button>
+      </nav>
+      <button class="snd" id="snd" type="button" aria-pressed="false" aria-label="Sonido">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="w" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/><path class="x" d="M17 9.5l4 5M21 9.5l-4 5"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="tag"></div>
+
+  <button class="back" id="back2" type="button" style="--c:#ff2f7a">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Volver
+  </button>
+
+  <div id="links">
+    <a target="_blank" rel="noopener" hidden></a>
+    <a target="_blank" rel="noopener" hidden></a>
+  </div>
+
+  <div id="loader">
+    <div class="ld">
+      <svg class="perro" viewBox="0 0 300 190" aria-hidden="true">
+      <ellipse cx="150" cy="160" rx="132" ry="14" fill="rgba(255,255,255,.06)"/>
+      <path class="vapor" d="M110 40 q-10 -14 0 -28 q10 -14 0 -28" style="--d:0s"/>
+      <path class="vapor" d="M150 36 q-10 -14 0 -28 q10 -14 0 -28" style="--d:.5s"/>
+      <path class="vapor" d="M190 40 q-10 -14 0 -28 q10 -14 0 -28" style="--d:1s"/>
+      <rect x="40" y="96" width="220" height="48" rx="24" fill="#c98440"/>
+      <rect class="sal" x="28" y="82" width="244" height="28" rx="14" fill="#b84a2a"/>
+      <rect x="46" y="110" width="208" height="36" rx="18" fill="#e3a35a"/>
+      <polyline class="sa mo" points="52,92 72,82 92,96 112,82 132,96 152,82 172,96 192,82 212,96 232,82 250,92"/>
+      <polyline class="sa ro" points="56,86 76,96 96,84 116,96 136,84 156,96 176,84 196,96 216,84 236,96 248,88"/>
+      <g class="pa" style="--d:0s"><rect x="70" y="70" width="3" height="13" rx="1.5" transform="rotate(30 70 70)"/></g><g class="pa" style="--d:0.05s"><rect x="95" y="66" width="3" height="13" rx="1.5" transform="rotate(-40 95 66)"/></g><g class="pa" style="--d:0.1s"><rect x="120" y="72" width="3" height="13" rx="1.5" transform="rotate(60 120 72)"/></g><g class="pa" style="--d:0.15s"><rect x="146" y="64" width="3" height="13" rx="1.5" transform="rotate(-20 146 64)"/></g><g class="pa" style="--d:0.08s"><rect x="170" y="70" width="3" height="13" rx="1.5" transform="rotate(45 170 70)"/></g><g class="pa" style="--d:0.12s"><rect x="196" y="66" width="3" height="13" rx="1.5" transform="rotate(-55 196 66)"/></g><g class="pa" style="--d:0.04s"><rect x="220" y="71" width="3" height="13" rx="1.5" transform="rotate(20 220 71)"/></g><g class="pa" style="--d:0.18s"><rect x="108" y="62" width="3" height="13" rx="1.5" transform="rotate(80 108 62)"/></g><g class="pa" style="--d:0.2s"><rect x="184" y="61" width="3" height="13" rx="1.5" transform="rotate(-75 184 61)"/></g><g class="pa" style="--d:0.14s"><rect x="232" y="64" width="3" height="13" rx="1.5" transform="rotate(35 232 64)"/></g>
+    </svg>
+      <div class="pct" id="pct">Cocinando 0%</div>
+      <button class="go" id="go" type="button" disabled>RECOGER</button>
+    </div>
+  </div>
+</body>
+</html>
