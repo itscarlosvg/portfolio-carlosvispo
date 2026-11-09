@@ -24,8 +24,8 @@ Mi portfolio no es una página con secciones: es un puesto de perros en una call
 | --- | --- | --- |
 | **Pizarra del menú** | Proyectos | La pizarra pasa de página como un menú y muestra cada proyecto con su captura, cómo se hizo y su enlace |
 | **Salsas** | Habilidades | La botella se aprieta, echa salsa hacia arriba y las tecnologías salen flotando de la boquilla |
-| **Mesa de dominó** | Sobre mí | Una ficha de la mesa se levanta, se da la vuelta y muestra mi experiencia y formación |
-| **Moto de delivery** | Contacto | Se abre la caja, sube la bolsa del pedido y el ticket trae mi presentación y mis redes |
+| **Mesa de dominó** | Trayectoria | Una ficha de la mesa se levanta, se da la vuelta y muestra mi experiencia y formación |
+| **Moto de delivery** | Sobre mí | Se abre la caja, sube la bolsa del pedido y el ticket trae mi presentación y mis redes |
 | **Rocola** | Navegación | Cuatro teclas de neón llevan a cada sección con un vuelo de cámara |
 | **Cornetas** | Sonido | Maracas, cuatro y la plancha chisporroteando |
 

@@ -46,14 +46,6 @@ button { font: inherit; color: inherit; }
   text-shadow: 0 0 6px var(--frambuesa), 0 0 18px var(--frambuesa);
 }
 .right { display: flex; align-items: center; gap: 10px; }
-.nav { display: flex; align-items: center; gap: 4px; }
-.nav button {
-  background: none; border: 1px solid transparent; border-radius: 999px; padding: 8px 14px; cursor: pointer;
-  font-family: var(--f-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gris);
-  transition: color .2s, border-color .2s, text-shadow .2s;
-}
-.nav button:hover, .nav button.on { color: var(--tinta); border-color: var(--c, var(--frambuesa)); text-shadow: 0 0 10px var(--c, var(--frambuesa)); }
-@media (max-width: 720px) { .bar .nav { display: none; } }
 
 .snd {
   width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--linea); background: rgba(7, 5, 15, .5);

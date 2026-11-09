@@ -14,8 +14,8 @@ scene.add(rocola);
 const TECLAS = [
   ['proyectos', 'A1', 'Proyectos', C.rosa, 1.0],
   ['servicios', 'A2', 'Habilidades', C.amarillo, 0.78],
-  ['sobre', 'B1', 'Sobre mí', C.azul, 0.56],
-  ['contacto', 'B2', 'Contacto', C.rojo, 0.34],
+  ['sobre', 'B1', 'Trayectoria', C.azul, 0.56],
+  ['contacto', 'B2', 'Sobre mí', C.rojo, 0.34],
 ];
 
 export const botones = [];

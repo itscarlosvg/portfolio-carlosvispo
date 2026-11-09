@@ -33,7 +33,7 @@ export const HOT = {
     tgt: [0.8, 2.15, 0.1], pos: [0.9, 2.35, 1.8],
   },
   sobre: {
-    root: mesa, color: C.azul, label: 'Sobre mí', anchor: [2.95, 1.35, 1.45], ring: [2.95, 1.45, 0.95],
+    root: mesa, color: C.azul, label: 'Trayectoria', anchor: [2.95, 1.35, 1.45], ring: [2.95, 1.45, 0.95],
     pose: () => {
       fichaPiv.updateWorldMatrix(true, false);
       const tgt = fichaPiv.localToWorld(new THREE.Vector3(0, 0.006, 0));
@@ -46,7 +46,7 @@ export const HOT = {
     },
   },
   contacto: {
-    root: moto, color: C.rojo, label: 'Contacto', anchor: [-3.35, 1.75, 4.5], ring: [-3.35, 4.5, 0.95],
+    root: moto, color: C.rojo, label: 'Sobre mí', anchor: [-3.35, 1.75, 4.5], ring: [-3.35, 4.5, 0.95],
     pose: () => pose(caja, [0, 0.32, 0.1], 0.43, 0.04, false),
     medio: () => pose(caja, [0, 0.12, 0], 1.7, 0.75),
   },
@@ -125,7 +125,6 @@ export function open(k) {
   }
   volver.style.setProperty('--c', h.color);
   volver.classList.add('show');
-  document.querySelectorAll('[data-go]').forEach((b) => b.classList.toggle('on', b.dataset.go === k));
   setHover(null);
   blip(660);
 }
@@ -135,7 +134,6 @@ export function close() {
   E.selSalsa = -1; killChips();
   volver.classList.remove('show');
   flyTo(E.saved || homePose(), 1.8);
-  document.querySelectorAll('[data-go]').forEach((b) => b.classList.remove('on'));
   blip(440);
 }
 
@@ -148,7 +146,6 @@ export function showSalsa(i) {
   blip(520 + i * 60);
 }
 
-document.addEventListener('click', (e) => { const g = e.target.closest('[data-go]'); if (g) open(g.dataset.go); });
 volver.addEventListener('click', close);
 $('#home').addEventListener('click', () => {
   if (HOT[E.state]) close();
