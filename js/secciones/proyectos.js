@@ -56,6 +56,14 @@ const ILUSTRACIONES = {
     g.lineTo(cx - s * 0.1, cy + s / 2); g.lineTo(cx - s * 0.45, cy + s / 2); g.lineTo(cx, cy); g.closePath(); g.fill();
     g.fillStyle = '#e8336f'; g.fillRect(cx + s * 0.4, cy + s * 0.28, s * 0.25, s * 0.22);
   },
+  simev(g, x, y, w, h) {
+    const gr = g.createRadialGradient(x + w * 0.7, y + h * 0.4, 10, x + w * 0.6, y + h / 2, w * 0.8);
+    gr.addColorStop(0, '#3a2fb8'); gr.addColorStop(1, '#0a0820');
+    g.fillStyle = gr; g.fillRect(x, y, w, h);
+    g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = '#ffffff';
+    g.font = `800 ${Math.round(h * 0.2)}px "Bricolage Grotesque"`;
+    g.fillText('SIMEV', x + w * 0.08, y + h / 2);
+  },
 };
 
 /* ---------- capturas ---------- */

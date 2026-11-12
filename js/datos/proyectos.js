@@ -41,4 +41,17 @@ export const PROYECTOS = [
     imagen: 'assets/img/vispo-and-co.jpg',
     ilustracion: 'vispo',
   },
+  {
+    nombre: 'SIMEV',
+    tipo: 'Web',
+    estado: 'En la plancha',
+    descripcion:
+      'Web corporativa hecha a mano, sin frameworks. Dos escenas 3D con un motor WebGL2 propio, sin Three.js y con ' +
+      'respaldo en SVG, y formulario de contacto con reCAPTCHA verificado en PHP. Build propio en Node para el hosting.',
+    skills: 'HTML · CSS · JavaScript · WebGL2 · PHP · Node.js',
+    boton: 'VER CÓDIGO',
+    href: 'https://github.com/itscarlosvg/simev-webpage',
+    imagen: 'assets/img/simev.jpg',
+    ilustracion: 'simev',
+  },
 ];
